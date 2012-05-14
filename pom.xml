@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.beethoven.code</groupId>
+  <artifactId>jshint4j-parent</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>jshint4j parent</name>
+
+  <url>>https://github.com/sergeevalexey/jshint4j</url>
+
+  <description>jshint4j parent POM</description>
+  <inceptionYear>2012</inceptionYear>
+
+  <developers>
+    <developer>
+      <id>dom</id>
+      <name>Alexey Sergev</name>
+      <email>sergeev.alexey@gmail.com</email>
+      <url>http://digital-life-style.blogspot.com</url>
+    </developer>
+  </developers>
+  <scm>
+    <url>https://github.com/sergeevalexey/jshint4j</url>
+    <connection>scm:git:git@github.com:sergeevalexey/jshint4j.git</connection>
+    <developerConnection>scm:git:git@github.com:sergeevalexey/jshint4j.git</developerConnection>
+  </scm>
+  <modules>
+    <module>jshint4j</module>
+    <module>jshint4j-tool</module>
+  </modules>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>jshint4j</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>jshint4j-tools</artifactId>
+        <version>${project.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.mozilla</groupId>
+        <artifactId>rhino</artifactId>
+        <version>1.7R3</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.10</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.3</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
