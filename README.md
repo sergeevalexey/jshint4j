@@ -9,7 +9,9 @@ Provides possibility to validate JS files using [JSHint](http://www.jshint.com/)
 ## HowToBuild
 
 Run from command line: 
-<pre><code>maven install</code></pre>
+<pre><code>maven package</code></pre> 
+
+In target directory will get jshint4j-tool-&lt;current project version&gt;-jar-with-dependencies.jar ready to use
 
 ## HowToRun
 
