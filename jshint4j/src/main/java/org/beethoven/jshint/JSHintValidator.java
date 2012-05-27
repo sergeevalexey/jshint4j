@@ -24,6 +24,10 @@ public class JSHintValidator {
     // JSHINT function
     private Function jsHintFunction;
 
+    public JSHintValidator() throws IOException {
+        this(new JSHintCompiler().compile());
+    }
+
     /**
      * Create new validator
      *

@@ -43,7 +43,7 @@ public class RunValidation {
             }
         }
 
-        List<JSHintError> errors = new JSHintValidator(new JSHintCompiler().compile()).validate(new File(args[0]), jsHintOptions);
+        List<JSHintError> errors = new JSHintValidator().validate(new File(args[0]), jsHintOptions);
         if (errors != null && errors.size() > 0) {
             System.out.println();
             System.out.println("Errors:");

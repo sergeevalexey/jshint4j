@@ -19,7 +19,7 @@ public class JSHintCompiler {
     public Function compile() throws IOException {
         // compile JSHint file
         Context context = Context.enter();
-        String scriptSource = IOUtils.toString(Thread.currentThread().getContextClassLoader().getClass().getResource("/org/beethoven/jshint/jshint-r07.js"));
+        String scriptSource = IOUtils.toString(this.getClass().getResource("/org/beethoven/jshint/jshint-r07.js"));
         Script jsHintScript = context.compileString(scriptSource, "<" + JSHINT_FUNCTION + " script>", 1, null);
         Context.exit();
         // retrieve function
